@@ -9,13 +9,9 @@ router.post('/', taskController.createTask);
 router.get('/', taskController.getTask);
 
 //update
-router.put('/:id', (req, res) => {
-  res.send('update tasks');
-});
+router.put('/:id', taskController.updateTask);
 
 //delete
-router.delete('/:id', (req, res) => {
-  res.send('delete tasks');
-});
+router.delete('/:id', taskController.deleteTask);
 
 module.exports = router;
