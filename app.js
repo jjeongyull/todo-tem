@@ -9,7 +9,7 @@ require('dotenv').config();
 const MONGODB_URI_PROD = process.env.MONGODB_URI_PROD;
 
 const app = express();
-app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(bodyParser.json());
 app.use(cors());
 
